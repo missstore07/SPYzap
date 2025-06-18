@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -9,13 +10,15 @@
     .container { max-width: 600px; margin: 0 auto; background: #111; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
     h1 { font-size: 24px; text-align: center; color: #e60000; margin-bottom: 20px; }
     p { font-size: 14px; text-align: center; margin-bottom: 20px; color: #ddd; }
-    .video-container { margin-top: 30px; text-align: center; position: relative; padding-bottom: 56.25%; /* proporção 16:9 */ height: 0; overflow: hidden; max-width: 100%; }
+    .video-container { margin-top: 30px; text-align: center; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
     .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
     .section { margin-top: 30px; }
-    .section p { font-size: 16px; color: #ddd; }
-    .section h2 { font-size: 20px; color: #e60000; }
-    .button-container { display: flex; justify-content: space-around; margin-top: 20px; }
-    button { background-color: #e60000; color: white; padding: 12px 20px; border: none; font-size: 18px; cursor: pointer; }
+    .section p { font-size: 16px; color: #ddd; text-align: left; }
+    .section h2 { font-size: 20px; color: #e60000; text-align: left; }
+    ul { color: #ddd; padding-left: 20px; }
+    ul li { margin-bottom: 10px; }
+    .button-container { display: flex; justify-content: space-around; margin-top: 20px; flex-wrap: wrap; gap: 10px; }
+    button { background-color: #e60000; color: white; padding: 12px 20px; border: none; font-size: 18px; cursor: pointer; border-radius: 5px; }
     button:hover { background-color: #b30000; }
     .highlight { color: #e60000; font-weight: bold; }
     .important { color: #ff6600; font-weight: bold; font-size: 16px; }
@@ -26,28 +29,35 @@
   <div class="container">
     <h1>Você Está Sendo Enganado(a)?</h1>
 
-    <!-- Seção de vídeo e texto sobre traição -->
-    <div class="section">
-      <h2>O <span class="highlight">impacto</span> da <span class="highlight">traição</span> na vida de alguém</h2>
-      <p>A <span class="highlight">traição</span> é <span class="important">devastadora</span>. Ela destrói a <span class="highlight">confiança</span>, corrói relacionamentos e gera sentimentos de <span class="highlight">raiva</span> e <span class="highlight">solidão</span>. Não apenas afeta o relacionamento, mas também a vida emocional e psicológica da pessoa traída.</p>
-      <p>Sentir que algo está errado, mas não conseguir provar, é uma das <span class="important">dores mais difíceis</span>. A <span class="highlight">dúvida</span> consome e afeta a saúde mental.</p>
-      <p><span class="highlight">Assista</span> ao vídeo abaixo e veja como a <span class="highlight">traição</span> impacta profundamente a vida de quem a sofre. Não deixe a dúvida corroer sua <span class="highlight">confiança</span>. A <span class="highlight">verdade</span> está ao seu alcance.</p>
-      
-      <!-- Video Embed -->
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/oeCYhWrQj1E" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
+```
+<!-- Seção de vídeo e texto sobre traição -->
+<div class="section">
+  <h2>Você sente isso?</h2>
+  <ul>
+    <li>🔴 Seu parceiro protege demais o celular?</li>
+    <li>🕵️‍♀️ Vai ao banheiro com o aparelho na mão?</li>
+    <li>😰 Você sente que tem algo errado, mas não tem provas?</li>
+    <li>🧠 A dúvida te consome e a ansiedade só cresce?</li>
+  </ul>
+  <p class="important">A traição é devastadora. Mas a verdade está ao seu alcance.</p>
+  <p style="text-align: center;"><strong>Assista abaixo e veja como descobrir tudo sem ser descoberto.</strong></p>
+  <!-- Video Embed -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/oeCYhWrQj1E" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
 
-    <!-- Pergunta após o vídeo -->
-    <h2 style="text-align: center; color: #e60000;">Agora que assistiu ao vídeo...</h2>
-    <p style="text-align: center;">Se seu parceiro(a) é <span class="highlight">homem</span> ou <span class="highlight">mulher</span>? Escolha abaixo para continuar e descobrir mais sobre como a traição pode ser revelada.</p>
+<!-- Pergunta após o vídeo -->
+<h2 style="text-align: center; color: #e60000; margin-top: 30px;">Agora que assistiu ao vídeo...</h2>
+<p style="text-align: center;">👇 Escolha abaixo e veja como descobrir conversas, prints e áudios agora mesmo:</p>
 
-    <!-- Botões para seleção do gênero do parceiro(a) -->
-    <div class="button-container">
-      <button onclick="location.href='homem.html'">Homem</button>
-      <button onclick="location.href='mulher.html'">Mulher</button>
-    </div>
+<!-- Botões para seleção do gênero do parceiro(a) -->
+<div class="button-container">
+  <button onclick="location.href='homem.html'">Investigar um Homem</button>
+  <button onclick="location.href='mulher.html'">Investigar uma Mulher</button>
+</div>
+```
+
   </div>
 
 </body>
