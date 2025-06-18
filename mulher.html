@@ -1,70 +1,25 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quiz - A Atitude do Seu Parceiro</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: #fff; }
-    .container { max-width: 600px; margin: 0 auto; background: #111; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-    h1 { font-size: 24px; text-align: center; color: #e60000; margin-bottom: 20px; }
-    p { font-size: 14px; text-align: center; margin-bottom: 20px; color: #ddd; }
-    .video-container { margin-top: 30px; text-align: center; }
-    .section { margin-top: 30px; }
-    .section label { font-size: 16px; color: #ddd; display: block; margin: 10px 0; }
-    .section input[type="radio"] { margin-right: 10px; }
-    .section button { width: 100%; padding: 12px; background-color: #e60000; border: none; font-size: 18px; color: white; cursor: pointer; }
-    .section button:hover { background-color: #b30000; }
-    .highlight { color: #e60000; font-weight: bold; }
-    .important { color: #ff6600; font-weight: bold; font-size: 16px; }
-  </style>
-</head>
-<body>
+<div class="section">
+  <form id="quizForm">
+    <label>1. Ele curte fotos de outras mulheres nas redes sociais?</label>
+    <input type="radio" name="q1" value="sim" required> Sim
+    <input type="radio" name="q1" value="nao"> Não
 
-  <div class="container">
-    <h1>Quiz - A Atitude do Seu Parceiro</h1>
-    <p>Responda às perguntas abaixo sobre o comportamento do seu parceiro para entender melhor a situação.</p>
-    
-    <div class="section">
-      <form id="quizForm">
-        <!-- Pergunta 1 -->
-        <label>1. Seu parceiro curte fotos de outras mulheres nas redes sociais?</label>
-        <input type="radio" name="q1" value="sim" required> Sim
-        <input type="radio" name="q1" value="nao"> Não
-        
-        <!-- Pergunta 2 -->
-        <label>2. Ele(a) conversa frequentemente com outras mulheres sem te contar?</label>
-        <input type="radio" name="q2" value="sim" required> Sim
-        <input type="radio" name="q2" value="nao"> Não
-        
-        <!-- Pergunta 3 -->
-        <label>3. Ele(a) tem mantido o celular em modo silencioso ou bloqueado?</label>
-        <input type="radio" name="q3" value="sim" required> Sim
-        <input type="radio" name="q3" value="nao"> Não
-        
-        <!-- Pergunta 4 -->
-        <label>4. Ele(a) evita te mostrar mensagens ou interações com outras mulheres?</label>
-        <input type="radio" name="q4" value="sim" required> Sim
-        <input type="radio" name="q4" value="nao"> Não
-        
-        <!-- Pergunta 5 -->
-        <label>5. Ele(a) tem se afastado mais recentemente, passando mais tempo fora de casa?</label>
-        <input type="radio" name="q5" value="sim" required> Sim
-        <input type="radio" name="q5" value="nao"> Não
-        
-        <!-- Botão de envio e redirecionamento para a página de regras -->
-        <button type="submit">Enviar Respostas</button>
-      </form>
-    </div>
-  </div>
+    <label>2. Ele conversa com outras mulheres sem te contar?</label>
+    <input type="radio" name="q2" value="sim" required> Sim
+    <input type="radio" name="q2" value="nao"> Não
 
-  <script>
-    document.getElementById('quizForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      // Redireciona para a página de regras
-      window.location.href = 'regras.html';
-    });
-  </script>
+    <label>3. Ele tem deixado o celular no silencioso ou sempre bloqueado?</label>
+    <input type="radio" name="q3" value="sim" required> Sim
+    <input type="radio" name="q3" value="nao"> Não
 
-</body>
-</html>
+    <label>4. Ele evita te mostrar mensagens ou se irrita quando você pega o celular dele?</label>
+    <input type="radio" name="q4" value="sim" required> Sim
+    <input type="radio" name="q4" value="nao"> Não
+
+    <label>5. Ele tem se afastado ultimamente e fica mais tempo fora de casa?</label>
+    <input type="radio" name="q5" value="sim" required> Sim
+    <input type="radio" name="q5" value="nao"> Não
+
+    <button type="submit">Enviar Respostas</button>
+  </form>
+</div>
