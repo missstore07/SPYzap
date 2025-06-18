@@ -1,67 +1,64 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Quiz - A Atitude da Sua Parceira</title>
+  <title>O Comportamento Dela Mudou?</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: #fff; }
     .container { max-width: 600px; margin: 0 auto; background: #111; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-    h1 { font-size: 24px; text-align: center; color: #e60000; margin-bottom: 20px; }
-    p { font-size: 14px; text-align: center; margin-bottom: 20px; color: #ddd; }
-    .video-container { margin-top: 30px; text-align: center; }
+    h1 { font-size: 24px; text-align: center; color: #e60000; margin-bottom: 10px; }
+    p { font-size: 15px; text-align: center; margin-bottom: 20px; color: #ddd; }
     .section { margin-top: 30px; }
     .section label { font-size: 16px; color: #ddd; display: block; margin: 10px 0; }
     .section input[type="radio"] { margin-right: 10px; }
-    .section button { width: 100%; padding: 12px; background-color: #e60000; border: none; font-size: 18px; color: white; cursor: pointer; }
+    .section button { width: 100%; padding: 12px; background-color: #e60000; border: none; font-size: 18px; color: white; cursor: pointer; border-radius: 5px; }
     .section button:hover { background-color: #b30000; }
-    .highlight { color: #e60000; font-weight: bold; }
-    .important { color: #ff6600; font-weight: bold; font-size: 16px; }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>Quiz - A Atitude da Sua Parceira</h1>
-    <p>Responda às perguntas abaixo sobre o comportamento da sua parceira para entender melhor a situação.</p>
-    
-    <div class="section">
-      <form id="quizForm">
-        <!-- Pergunta 1 -->
-        <label>1. Sua parceira assiste pornografia com frequência?</label>
-        <input type="radio" name="q1" value="sim" required> Sim
-        <input type="radio" name="q1" value="nao"> Não
-        
-        <!-- Pergunta 2 -->
-        <label>2. Ela tem dado menos atenção para você nos últimos tempos?</label>
-        <input type="radio" name="q2" value="sim" required> Sim
-        <input type="radio" name="q2" value="nao"> Não
-        
-        <!-- Pergunta 3 -->
-        <label>3. Sua parceira esconde o celular ou o mantém longe de você?</label>
-        <input type="radio" name="q3" value="sim" required> Sim
-        <input type="radio" name="q3" value="nao"> Não
-        
-        <!-- Pergunta 4 -->
-        <label>4. Ela evita te mostrar o que tem feito no celular?</label>
-        <input type="radio" name="q4" value="sim" required> Sim
-        <input type="radio" name="q4" value="nao"> Não
-        
-        <!-- Pergunta 5 -->
-        <label>5. Ela se recusa a te apresentar para novas amizades ou colegas?</label>
-        <input type="radio" name="q5" value="sim" required> Sim
-        <input type="radio" name="q5" value="nao"> Não
-        
-        <!-- Botão de envio e redirecionamento para a página de regras -->
-        <button type="submit">Enviar Respostas</button>
-      </form>
-    </div>
+    <h1>⚠️ O Comportamento Dela Mudou?</h1>
+    <p>Essas perguntas foram feitas para homens que começaram a notar sinais estranhos.<br>
+    Se você marcar 3 ou mais “Sim”, pode haver algo escondido.<br>
+    Responda com sinceridade e veja o que a dúvida pode estar tentando te mostrar.</p>
+
+```
+<div class="section">
+  <form id="quizForm">
+    <label>1. Sua parceira esconde o celular, vira a tela pra baixo ou sai de perto pra responder?</label>
+    <input type="radio" name="q1" value="sim" required> Sim
+    <input type="radio" name="q1" value="nao"> Não
+
+    <label>2. Ela tem te dado menos atenção e evita momentos a dois?</label>
+    <input type="radio" name="q2" value="sim" required> Sim
+    <input type="radio" name="q2" value="nao"> Não
+
+    <label>3. Você percebe que ela fica mais tempo online, mas sem te responder?</label>
+    <input type="radio" name="q3" value="sim" required> Sim
+    <input type="radio" name="q3" value="nao"> Não
+
+    <label>4. Ela evita falar com você sobre o que faz nas redes sociais?</label>
+    <input type="radio" name="q4" value="sim" required> Sim
+    <input type="radio" name="q4" value="nao"> Não
+
+    <label>5. Ela se recusa a te apresentar a “amigos” ou colegas que estão sempre comentando nas fotos?</label>
+    <input type="radio" name="q5" value="sim" required> Sim
+    <input type="radio" name="q5" value="nao"> Não
+
+    <button type="submit">Enviar Respostas</button>
+  </form>
+</div>
+```
+
   </div>
 
   <script>
     document.getElementById('quizForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      // Redireciona para a página de regras
+      alert("🔍 Avaliando suas respostas...\n\nHá indícios claros de comportamento suspeito.\n\nClique em OK para descobrir tudo agora, com sigilo total.");
       window.location.href = 'regras.html';
     });
   </script>
