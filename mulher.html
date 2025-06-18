@@ -1,25 +1,58 @@
-<div class="section">
-  <form id="quizForm">
-    <label>1. Ele curte fotos de outras mulheres nas redes sociais?</label>
-    <input type="radio" name="q1" value="sim" required> Sim
-    <input type="radio" name="q1" value="nao"> Não
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Você Está Pronta para Descobrir a Verdade?</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: #fff; }
+    .container { max-width: 600px; margin: 40px auto; background: #111; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+    h1 { font-size: 24px; text-align: center; color: #e60000; margin-bottom: 20px; }
+    p { font-size: 15px; text-align: center; margin-bottom: 20px; color: #ddd; line-height: 1.5; }
+    .section label { font-size: 16px; color: #ddd; display: block; margin: 15px 0 5px; }
+    .section input[type="radio"] { margin-right: 10px; }
+    .section button { width: 100%; padding: 14px; background-color: #e60000; border: none; font-size: 18px; color: white; cursor: pointer; border-radius: 5px; margin-top: 20px; }
+    .section button:hover { background-color: #b30000; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚠️ O Comportamento Dele Mudou?</h1>
+    <p>Essas perguntas foram feitas para mulheres que começaram a notar atitudes estranhas no parceiro.<br>
+    Se você marcar 3 ou mais “Sim”, é sinal de alerta.<br>
+    Responda com sinceridade e veja o que a dúvida está tentando te mostrar.</p>
+    <div class="section">
+      <form id="quizForm">
+        <label>1. Ele curte fotos de outras mulheres nas redes sociais?</label>
+        <input type="radio" name="q1" value="sim" required> Sim
+        <input type="radio" name="q1" value="nao"> Não
 
-    <label>2. Ele conversa com outras mulheres sem te contar?</label>
-    <input type="radio" name="q2" value="sim" required> Sim
-    <input type="radio" name="q2" value="nao"> Não
+        <label>2. Ele conversa com outras mulheres sem te contar?</label>
+        <input type="radio" name="q2" value="sim" required> Sim
+        <input type="radio" name="q2" value="nao"> Não
 
-    <label>3. Ele tem deixado o celular no silencioso ou sempre bloqueado?</label>
-    <input type="radio" name="q3" value="sim" required> Sim
-    <input type="radio" name="q3" value="nao"> Não
+        <label>3. Ele tem deixado o celular no silencioso ou sempre bloqueado?</label>
+        <input type="radio" name="q3" value="sim" required> Sim
+        <input type="radio" name="q3" value="nao"> Não
 
-    <label>4. Ele evita te mostrar mensagens ou se irrita quando você pega o celular dele?</label>
-    <input type="radio" name="q4" value="sim" required> Sim
-    <input type="radio" name="q4" value="nao"> Não
+        <label>4. Ele evita te mostrar mensagens ou se irrita quando você pega o celular dele?</label>
+        <input type="radio" name="q4" value="sim" required> Sim
+        <input type="radio" name="q4" value="nao"> Não
 
-    <label>5. Ele tem se afastado ultimamente e fica mais tempo fora de casa?</label>
-    <input type="radio" name="q5" value="sim" required> Sim
-    <input type="radio" name="q5" value="nao"> Não
+        <label>5. Ele tem se afastado ultimamente e fica mais tempo fora de casa?</label>
+        <input type="radio" name="q5" value="sim" required> Sim
+        <input type="radio" name="q5" value="nao"> Não
 
-    <button type="submit">Enviar Respostas</button>
-  </form>
-</div>
+        <button type="submit">Enviar Respostas</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("🔍 Avaliando suas respostas...\n\nSeu parceiro apresenta sinais consistentes de comportamento suspeito.\n\nClique em OK para ver como descobrir tudo agora, com sigilo total.");
+      window.location.href = 'regras.html';
+    });
+  </script>
+</body>
+</html>
